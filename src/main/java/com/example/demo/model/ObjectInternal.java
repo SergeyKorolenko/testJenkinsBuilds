@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class BeameryObjectInternal {
+public class ObjectInternal {
     private String id;
     private String value;
 }

@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import com.example.demo.model.BeameryInternalContact;
+import com.example.demo.model.InternalContact;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MainController {
 
     @PostMapping("/contact")
-    public void addResource(@RequestBody BeameryInternalContact contact) {
+    public void addResource(@RequestBody InternalContact contact) {
         System.out.println(contact);
     }
 }

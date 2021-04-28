@@ -12,12 +12,12 @@ import java.util.Map;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class BeameryObjectWrapperInternal {
-    private List<BeameryObjectInternal> values;
+public class ObjectWrapperInternal {
+    private List<ObjectInternal> values;
 
     @SuppressWarnings("unchecked")
     @JsonProperty("values")
-    private void unpackNested(Map<String, BeameryObjectInternal> innerValues) {
+    private void unpackNested(Map<String, ObjectInternal> innerValues) {
        values = new ArrayList<>(innerValues.values());
     }
 }
