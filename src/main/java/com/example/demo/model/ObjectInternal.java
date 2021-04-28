@@ -12,4 +12,5 @@ import lombok.NoArgsConstructor;
 public class ObjectInternal {
     private String id;
     private String value;
+    private Boolean deleted;
 }
